@@ -181,17 +181,19 @@ export default function Scanner() {
                         </>
                     )}
 
-                    {scannedData && (
+                    {/* {scannedData && (
                         <>
                             <Text>Type: {barcodeType}</Text>
                             <Text>Data: {scannedData.data}</Text>
                         </>
-                    )}
+                    )} */}
 
                     {checkedIn && (
-                        <Text style={{ color: 'green' }}>
-                            {successMessage}
-                        </Text>
+                        <View style={styles.scanSuccess}>
+                            <Text>
+                                {successMessage}
+                            </Text>
+                        </View>
                     )}
                 </View>
             </View>
@@ -221,7 +223,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'grey',
         width: 'auto',
         width: '100%',
-        padding: 20,
+        padding: 14,
         borderRadius: 8,
         justifyContent: 'center',
         alignItems: 'center',
