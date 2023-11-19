@@ -18,6 +18,9 @@ export default function Home() {
           <View>
             <Link href="/check-in">Scan</Link>
           </View>
+          <View>
+            <Link href="/guestlist">Guestlist</Link>
+          </View>
         </View>
 
         {/* <Link href="/modal">Present modal</Link> */}
